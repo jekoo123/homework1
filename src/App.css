@@ -1,0 +1,169 @@
+html{
+  font-size:16px;
+}
+
+.body{
+  line-height:1.5;
+  margin:0px;
+  padding:0px;
+}
+
+.header{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  border-bottom : 1px solid rgb(222,226,230);
+  box-shadow : 0px 4px 12px 0px rgba(0,0,0,.05);
+  height:40px;
+  font-size:16px;
+  margin-bottom:16px;
+  padding : 16px 24px;
+}
+h5{
+  font-size:20px;
+  margin-right:auto;
+  color : rgb(33 37 41);
+  font-weight: 450;
+}
+
+.nav{
+  margin-right:16px;
+}
+
+.nav_con{
+  padding:8px;
+  font-weight:110;
+}
+
+.button1{
+  border:0.8px solid rgb(0,123,255);
+  border-radius:4px;
+  color : rgb(0, 123,255);
+  padding:6px 12px;
+}
+
+.title{
+  padding:48px 16px 24px;
+}
+
+.pricing{
+  font-size:56px;
+  font-weight:300;
+  line-height:auto;
+  text-align:center;
+  margin:0px auto 8px;
+}
+.explain{
+  font-size:20px;
+  font-weight:300;
+  line-height:30px;
+  margin:0px auto 16px;
+  text-align: center;
+  width:668px;
+}
+
+.card_container{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card_body{
+  border : 1px solid rgb(222,226,230);
+  box-shadow : 0px 4px 12px 0px rgba(0,0,0,.05);
+  width:290px;
+  margin:30px;
+  padding-bottom:20px;
+  text-align:center;
+}
+.card_main{
+  height:270px;
+}
+.card_title{
+  border-bottom : 1px solid rgb(222,226,230);
+  background-color: rgb(0,0,0,0.03);
+  width:290px;
+  text-align:center;
+  font-size:24px;
+  font-weight:450;
+  margin:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:54px;
+}
+
+.card_price_unit{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+}
+.card_price{
+  font-size:40px;
+  margin:0;
+}
+.unit{
+  color:rgb(108,117,125);
+  font-size:32px;
+  margin:20px 10px;
+}
+.list_container{
+  text-align: center;
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:30px;
+}
+.list{
+  text-align:center;
+  margin:0;
+}
+.card_botton{
+  width:250px;
+  height:50px;
+  font-size:20px;
+  border:0.8px solid blue;
+  border-radius:4.8px;
+  background-color: rgb(0, 123, 255);
+}
+
+.image_container{
+  width:240px;
+  
+}
+
+.footer_container{
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top:48px;
+  padding-top:48px;
+
+}
+
+.links{
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content:flex-start;
+  padding-top:0px;
+  width:240px;
+  height:190px;
+
+}
+.link_title{
+  margin:0px;
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+.list_box{
+  display:flex;
+  flex-flow:column nowrap;
+}
+
+
