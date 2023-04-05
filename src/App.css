@@ -118,10 +118,7 @@ h5{
   align-items: center;
   margin-bottom:30px;
 }
-.list{
-  text-align:center;
-  margin:0;
-}
+
 .card_botton{
   width:250px;
   height:50px;
@@ -133,7 +130,6 @@ h5{
 
 .image_container{
   width:240px;
-  
 }
 
 .footer_container{
