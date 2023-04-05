@@ -1,5 +1,4 @@
-// import React, { useEffect } from 'react';
-import React from "react";
+import React, { useState } from 'react';
 import "./App.css";
 // import { applyStyles } from './functions';
 
@@ -9,9 +8,8 @@ function App() {
   // }, []);
   const cards = [
     {
-      id : 0,
       title: "Free",
-      price: 0,
+      price:0,
       unit: " / mo",
       users: "10",
       storage: "2",
@@ -20,7 +18,6 @@ function App() {
       buttonstyle: "outlined",
     },
     {
-      id : 1,
       title: "Pro",
       price: 15,
       unit: " / mo",
@@ -31,7 +28,6 @@ function App() {
       buttonstyle: "filled",
     },
     {
-      id : 2,
       title: "Enterprise",
       price: 29,
       unit: " / mo",
@@ -44,7 +40,6 @@ function App() {
   ];
 
   const Card = ({
-    id,
     title,
     price,
     users,
@@ -53,18 +48,20 @@ function App() {
     buttonText,
     buttonstyle,
   }) => {
-    const increase = () =>{
-      price++;
-      const temp_price = document.getElementsByClassName("card_price");
-      temp_price[id].textContent = '${price}';
+    const [pi,setPri] = useState(price);
+    const increase = (a) =>{
+      setPri(pi+1);
+      // price++;
+      // const temp_price = document.getElementsByClassName("card_price");
+      // temp_price[id].textContent = '${price}';
     }
-    
+
     return (
       <div className="card_body">
         <h5 className="card_title">{title}</h5>
         <div className="card_main">
           <div className="card_price_unit">
-            <h2 className="card_price">${price}</h2>
+            <h2 className="card_price">${pi}</h2>
             <h2 className="unit"> / mo</h2>
           </div>
           <div className="list_container">
@@ -80,7 +77,7 @@ function App() {
                 ? { background: "white", color: "blue" }
                 : { background: "blue", color: "white" }
             }
-            onclick ={increase}
+            onClick ={increase}
             // onClick={()=>{
             //   const temp_button = document.getElementsByClassName('card_botton');
             //   const temp_price = document.getElementsByClassName('card_price');
